@@ -83,7 +83,8 @@ echo Syncing...
 #rm local_manifest.xml
 #cd ../
 rm -f .repo/local_manifests/*
-repo sync -j16 -f 
+rm -rf device/*
+repo sync -j16 -f
 check_result repo sync failed.
 echo Sync complete.
 
