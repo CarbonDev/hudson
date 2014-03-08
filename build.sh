@@ -84,6 +84,7 @@ echo Syncing...
 #cd ../
 rm -f .repo/local_manifests/*
 rm -rf device/*
+rm -rf vendor/samsung
 repo sync -j16 -f
 check_result repo sync failed.
 echo Sync complete.
