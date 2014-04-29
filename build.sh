@@ -131,5 +131,5 @@ md5=$ZIP.md5sum
 rm -rf $WORKSPACE2/archive
 mkdir $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
-cp $md5 $WORKSPACE2/archive
+cp $md5 $WORKSPACE2/archive/$ZIP.md5
 check_result Build failed
