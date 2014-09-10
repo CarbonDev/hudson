@@ -73,7 +73,10 @@ rm -rf kernel/*
 echo Syncing...
 rm -f .repo/local_manifests/*
 rm -rf device/*
-rm -rf vendor/
+rm -rf vendor/samsung
+rm -rf vendor/motorola
+rm -rf vendor/lge
+rm -rf vendor/asus
 repo sync -j16 -f
 check_result repo sync failed.
 echo Sync complete.
