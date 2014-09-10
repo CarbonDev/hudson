@@ -12,5 +12,3 @@ fi
 
 cd hudson
 git pull
-
-exec ./build.sh
