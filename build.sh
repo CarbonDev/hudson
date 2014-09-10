@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-function check_result {
-  if [ "0" -ne "$?" ]
-  then
-    echo $1
-    exit 1
-  fi
-}
-
 if [ -z "$WORKSPACE" ]
 then
   echo WORKSPACE not specified

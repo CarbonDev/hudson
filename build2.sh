@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
 then
   $WORKSPACE/hudson/$REPO_BRANCH-setup.sh
