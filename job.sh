@@ -5,12 +5,11 @@ cd ../android
 export WORKSPACE=$PWD
 echo $ANDROID_JAVA_HOME
 
-if [ ! -d hudson ]
+if [ -d hudson ]
 then
-  git clone git://github.com/CarbonDev/hudson.git -b jb2
+  rm -rf hudson
 fi
 
-cd hudson
-git pull
+git clone git://github.com/CarbonDev/hudson.git -b old
 
 exec ./build.sh
