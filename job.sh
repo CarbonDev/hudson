@@ -12,4 +12,5 @@ fi
 
 git clone git://github.com/CarbonDev/hudson.git -b old
 
+cd hudson
 exec ./build.sh
