@@ -34,6 +34,7 @@ export CL_PFX="\"\033[34m\""
 export CL_INS="\"\033[32m\""
 export CL_RST="\"\033[0m\""
 
+cd $WORKSPACE
 export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
