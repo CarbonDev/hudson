@@ -82,6 +82,11 @@ echo Syncing...
 rm -f .repo/local_manifests/*
 rm -rf device/*
 rm -rf vendor/*
+
+## Clean up old builds...
+rm -rf ../../*nightly
+rm -rf ../../*noupload
+
 repo sync -j16 -f
 check_result repo sync failed.
 echo Sync complete.
