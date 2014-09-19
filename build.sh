@@ -79,12 +79,9 @@ fi
 rm -rf kernel/*
 
 echo Syncing...
-#cd .repo
-#rm local_manifest.xml
-#cd ../
 rm -f .repo/local_manifests/*
 rm -rf device/*
-rm -rf vendor/samsung
+rm -rf vendor/*
 repo sync -j16 -f
 check_result repo sync failed.
 echo Sync complete.
