@@ -34,9 +34,6 @@ export CL_PFX="\"\033[34m\""
 export CL_INS="\"\033[32m\""
 export CL_RST="\"\033[0m\""
 
-cd $WORKSPACE
-rm -rf archive
-mkdir -p archive
 export BUILD_NO=$BUILD_NUMBER
 unset BUILD_NUMBER
 
@@ -132,7 +129,7 @@ ZIP=$(tail -3 "$LUNCH".log | cut -f3 -d ' ' | cut -f1 -d '"' |  sed -e '/^$/ d')
 md5=$ZIP.md5sum
 md5file=$(echo $ZIP | rev | cut -d"/" -f1-1 | rev).md5
 rm -rf $WORKSPACE2/archive
-mkdir $WORKSPACE2/archive
+mkdir -p $WORKSPACE2/archive
 cp $ZIP $WORKSPACE2/archive
 cp $md5 $WORKSPACE2/archive/$md5file
 check_result Build failed
